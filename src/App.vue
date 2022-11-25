@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import type { ConfigProviderThemeVars } from 'vant';
+
 // https://github.com/vueuse/head
 useHead({
   title: 'Template Vitesse Lite',
@@ -17,11 +19,19 @@ useHead({
     },
   ],
 })
+
+const theme = useThemeStore();
+const { vantTheme } = storeToRefs(theme);
+const themeVars: ConfigProviderThemeVars = {}
+const themeVarsDark: ConfigProviderThemeVars = {}
+const themeVarsLight: ConfigProviderThemeVars = {}
 </script>
 
 <template>
-  <main font-sans p="x-4 y-10" text="center gray-700 dark:gray-200">
-    <RouterView />
-    <Footer />
-  </main>
+  <VanConfigProvider :theme="vantTheme" :theme-vars="themeVars" :theme-vars-dark="themeVarsDark" :theme-vars-light="themeVarsLight">
+    <main font-sans p="x-4 y-10" text="center gray-700 dark:gray-200">
+      <RouterView />
+      <Footer />
+    </main>
+  </VanConfigProvider>
 </template>
