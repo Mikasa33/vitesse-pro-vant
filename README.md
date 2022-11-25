@@ -29,9 +29,15 @@
 
 - 😃 Use icons from any icon sets in [Pure CSS](https://github.com/antfu/unocss/tree/main/packages/preset-icons)
 
+- 🔎 [Component Preview](https://github.com/johnsoncodehk/vite-plugin-vue-component-preview)
+
+- 🗒 [Markdown Support](https://github.com/antfu/vite-plugin-vue-markdown)
+
 - 🔥 Use the [new `<script setup>` style](https://github.com/vuejs/rfcs/pull/227)
 
-- ✅ Use [Vitest](http://vitest.dev/) for unit and components testing
+- 🤙🏻 [Reactivity Transform](https://vuejs.org/guide/extras/reactivity-transform.html) enabled
+
+- 📥 [APIs auto importing](https://github.com/antfu/unplugin-auto-import) - use Composition API and others directly
 
 - 🦾 TypeScript, of course
 
@@ -66,9 +72,19 @@ See [Vitesse](https://github.com/antfu/vitesse) for full featureset.
 
 - [Vue Router](https://github.com/vuejs/vue-router)
   - [`vite-plugin-pages`](https://github.com/hannoeru/vite-plugin-pages) - file system based routing
-- [`unplugin-auto-import`](https://github.com/antfu/unplugin-auto-import) - Directly use Vue Composition API and others without importing
+- [Pinia](https://pinia.vuejs.org) - Intuitive, type safe, light and flexible Store for Vue using the composition api
 - [`unplugin-vue-components`](https://github.com/antfu/unplugin-vue-components) - components auto import
+- [`unplugin-auto-import`](https://github.com/antfu/unplugin-auto-import) - Directly use Vue Composition API and others without importing
+- [`vite-plugin-vue-component-preview`](https://github.com/johnsoncodehk/vite-plugin-vue-component-preview) - Preview single component in VSCode
+- [`vite-plugin-vue-markdown`](https://github.com/antfu/vite-plugin-vue-markdown) - Markdown as components / components in Markdown
+  - [`markdown-it-shiki`](https://github.com/antfu/markdown-it-shiki) - [Shiki](https://github.com/shikijs/shiki) for syntax highlighting
 - [VueUse](https://github.com/antfu/vueuse) - collection of useful composition APIs
+- [`@vueuse/head`](https://github.com/vueuse/head) - manipulate document head reactively
+
+### Coding Style
+
+- Use Composition API with [`<script setup>` SFC syntax](https://github.com/vuejs/rfcs/pull/227)
+- [ESLint](https://eslint.org/) with [@antfu/eslint-config](https://github.com/antfu/eslint-config), single quotes, no semi.
 
 ## Try it now!
 
@@ -85,3 +101,40 @@ npx degit antfu/vitesse-lite my-vitesse-app
 cd my-vitesse-app
 pnpm i # If you don't have pnpm installed, run: npm install -g pnpm
 ```
+
+## Checklist
+
+When you use this template, try follow the checklist to update your info properly
+
+- [ ] Change the author name in `LICENSE`
+- [ ] Change the title in `App.vue`
+- [ ] Change the hostname in `vite.config.ts`
+- [ ] Change the favicon in `public`
+- [ ] Remove the `.github` folder which contains the funding info
+- [ ] Clean up the READMEs and remove routes
+
+And, enjoy :)
+
+## Usage
+
+### Development
+
+Just run and visit http://localhost:3333
+
+```bash
+pnpm dev
+```
+
+### Build
+
+To build the App, run
+
+```bash
+pnpm build
+```
+
+And you will see the generated file in `dist` that ready to be served.
+
+### Deploy on Netlify
+
+Go to [Netlify](https://app.netlify.com/start) and select your clone, `OK` along the way, and your App will be live in a minute.
