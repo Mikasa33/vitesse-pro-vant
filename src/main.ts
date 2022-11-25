@@ -1,4 +1,3 @@
-import { createApp } from 'vue'
 import { createRouter, createWebHistory } from 'vue-router'
 import { createHead } from '@vueuse/head'
 import routes from 'virtual:generated-pages'
@@ -13,7 +12,9 @@ const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes,
 })
+const pinia = createPinia()
 const head = createHead()
 app.use(router)
+app.use(pinia)
 app.use(head)
 app.mount('#app')

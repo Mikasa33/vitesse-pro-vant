@@ -4,7 +4,6 @@ import Preview from 'vite-plugin-vue-component-preview'
 import Vue from '@vitejs/plugin-vue'
 import Pages from 'vite-plugin-pages'
 import Components from 'unplugin-vue-components/vite'
-import { NaiveUiResolver } from 'unplugin-vue-components/resolvers'
 import AutoImport from 'unplugin-auto-import/vite'
 import Markdown from 'vite-plugin-vue-markdown'
 import LinkAttributes from 'markdown-it-link-attributes'
@@ -40,14 +39,6 @@ export default defineConfig({
         'pinia',
         '@vueuse/head',
         '@vueuse/core',
-        {
-          'naive-ui': [
-            'useDialog',
-            'useMessage',
-            'useNotification',
-            'useLoadingBar',
-          ],
-        },
       ],
       dts: 'types/auto-imports.d.ts',
       dirs: [
@@ -64,7 +55,6 @@ export default defineConfig({
       // allow auto import and register components used in markdown
       include: [/\.vue$/, /\.vue\?vue/, /\.md$/],
       dts: 'types/components.d.ts',
-      resolvers: [NaiveUiResolver()],
     }),
 
     // https://github.com/antfu/unocss
