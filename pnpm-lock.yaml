@@ -18,12 +18,12 @@ specifiers:
   nprogress: ^0.2.0
   pinia: ^2.0.26
   pnpm: ^7.17.0
-  shiki: ^0.11.1
   taze: ^0.8.4
   typescript: ^4.9.3
   unocss: ^0.46.5
   unplugin-auto-import: ^0.11.5
   unplugin-vue-components: ^0.22.11
+  vant: 4.0.0-rc.9
   vite: ^3.2.4
   vite-plugin-pages: ^0.27.1
   vite-plugin-vue-component-preview: ^0.3.3
@@ -37,6 +37,7 @@ dependencies:
   '@vueuse/head': 1.0.18_vue@3.2.45
   nprogress: 0.2.0
   pinia: 2.0.26_mgnvym7yiazkylwwogi5r767ue
+  vant: 4.0.0-rc.9_vue@3.2.45
   vue: 3.2.45
   vue-router: 4.1.6_vue@3.2.45
 
@@ -54,7 +55,6 @@ devDependencies:
   markdown-it-link-attributes: 4.0.1
   markdown-it-shiki: 0.6.1
   pnpm: 7.17.0
-  shiki: 0.11.1
   taze: 0.8.4
   typescript: 4.9.3
   unocss: 0.46.5_vite@3.2.4
@@ -904,6 +904,14 @@ packages:
     transitivePeerDependencies:
       - rollup
     dev: true
+
+  /@vant/popperjs/1.3.0:
+    resolution: {integrity: sha512-hB+czUG+aHtjhaEmCJDuXOep0YTZjdlRR+4MSmIFnkCQIxJaXLQdSsR90XWvAI2yvKUI7TCGqR8pQg2RtvkMHw==}
+    dev: false
+
+  /@vant/use/1.4.3:
+    resolution: {integrity: sha512-rSnETN7P9qT1WbItMpQxBqe3cHeK2ZFYp1sCxWUXaTeI71TqA8sOdzC36ledZ36NQgFNTch9fsRPYOkrCgZfQA==}
+    dev: false
 
   /@vitejs/plugin-vue/3.2.0_vite@3.2.4+vue@3.2.45:
     resolution: {integrity: sha512-E0tnaL4fr+qkdCNxJ+Xd0yM31UwMkQje76fsDVBBUCoGOUPexu2VDUYHL8P4CwV+zMvWw6nlRw19OnRKmYAJpw==}
@@ -4886,6 +4894,16 @@ packages:
     dependencies:
       builtins: 5.0.1
     dev: true
+
+  /vant/4.0.0-rc.9_vue@3.2.45:
+    resolution: {integrity: sha512-NGat+3ZEGtOmgRTCjhZDC6LNjkYFkbz8ndjvWyZOjdkxqEXyZg8PrdjS/JNAPo7P7g6YkGcip1Ghyh8mBxua+Q==}
+    peerDependencies:
+      vue: ^3.0.0
+    dependencies:
+      '@vant/popperjs': 1.3.0
+      '@vant/use': 1.4.3
+      vue: 3.2.45
+    dev: false
 
   /vite-plugin-pages/0.27.1_vite@3.2.4:
     resolution: {integrity: sha512-KXfeG9aQSNsSXBs1mPeeuC0rwkLti+MgoJ3GknrwRDNrdrojb9czcFAVlnoPNVdfuvTHcWdf5zqN7+vuvz2JZQ==}
