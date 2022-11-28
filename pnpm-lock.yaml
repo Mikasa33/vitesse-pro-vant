@@ -24,7 +24,7 @@ specifiers:
   unocss: ^0.46.5
   unplugin-auto-import: ^0.11.5
   unplugin-vue-components: ^0.22.11
-  vant: 4.0.0-rc.9
+  vant: '4'
   vite: ^3.2.4
   vite-plugin-pages: ^0.27.1
   vite-plugin-vue-component-preview: ^0.3.3
@@ -38,7 +38,7 @@ dependencies:
   '@vueuse/head': 1.0.18_vue@3.2.45
   nprogress: 0.2.0
   pinia: 2.0.26_mgnvym7yiazkylwwogi5r767ue
-  vant: 4.0.0-rc.9_vue@3.2.45
+  vant: 4.0.0_vue@3.2.45
   vue: 3.2.45
   vue-router: 4.1.6_vue@3.2.45
 
@@ -4897,8 +4897,8 @@ packages:
       builtins: 5.0.1
     dev: true
 
-  /vant/4.0.0-rc.9_vue@3.2.45:
-    resolution: {integrity: sha512-NGat+3ZEGtOmgRTCjhZDC6LNjkYFkbz8ndjvWyZOjdkxqEXyZg8PrdjS/JNAPo7P7g6YkGcip1Ghyh8mBxua+Q==}
+  /vant/4.0.0_vue@3.2.45:
+    resolution: {integrity: sha512-s3FDA7mWfkgFBWq/8J09dQZETeCzfGT41289fTIcp7VEcME62zXEw+8S41+stJVjk8fNXYRvMXsGfcD7HTLpaQ==}
     peerDependencies:
       vue: ^3.0.0
     dependencies:
