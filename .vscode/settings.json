@@ -22,6 +22,7 @@
   "editor.suggestSelection": "first",
   "editor.tabSize": 2,
   "editor.unicodeHighlight.invisibleCharacters": false,
+  "editor.formatOnSave": false,
   "editor.codeActionsOnSave": {
     "source.fixAll": false,
     "source.fixAll.eslint": true, // this allows ESLint to auto fix on save

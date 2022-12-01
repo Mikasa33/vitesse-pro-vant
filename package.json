@@ -6,6 +6,7 @@
     "build": "vite build",
     "dev": "vite --port 7777 --open",
     "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
     "typecheck": "vue-tsc --noEmit",
     "preview": "vite preview",
     "up": "taze major -I"
