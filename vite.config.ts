@@ -41,7 +41,7 @@ export default defineConfig({
         '@vueuse/head',
         '@vueuse/core',
         {
-          'vant': [
+          vant: [
             'showDialog',
             'showImagePreview',
             'showNotify',
@@ -52,7 +52,7 @@ export default defineConfig({
       dts: 'types/auto-imports.d.ts',
       dirs: [
         'src/composables',
-        'src/store',
+        'src/stores',
       ],
       vueTemplate: true,
     }),
